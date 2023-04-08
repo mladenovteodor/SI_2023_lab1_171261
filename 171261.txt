@@ -1,0 +1,99 @@
+
+TM@DESKTOP-S1CO95O MINGW64 ~
+$ mkdir SI_2023_lab1_171261
+
+TM@DESKTOP-S1CO95O MINGW64 ~
+$ cd SI_2023_lab1_171261
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261
+$ git init
+Initialized empty Git repository in C:/Users/TM/SI_2023_lab1_171261/.git/
+
+Иницијализација на фолдерот да стане git репозиториум
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ git remote add origin https://github.com/mladenovteodor/SI_2023_lab1_171261.t
+
+поврзување на remote репозиториум со github
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ git remote -v
+origin  https://github.com/mladenovteodor/SI_2023_lab1_171261.git (fetch)
+origin  https://github.com/mladenovteodor/SI_2023_lab1_171261.git (push)
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ echo "# SI_2023_lab1_171261" >> README.md
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ ls
+README.md
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the nt time Git touches it
+
+поставување на README.md на stage
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ git commit -m "initial commit"
+[master (root-commit) c52d29f] initial commit
+ 1 file changed, 4 insertions(+)
+ create mode 100644 README.md
+
+Правење commit na тоа што е на stage
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Проверка
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ echo SILab1.java
+SILab1.java
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ ls
+README.md
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ echo "# SI_2023_lab1_171261" >> SILab1.java
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ ls
+README.md  SILab1.java
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ git add SILab1.java
+warning: in the working copy of 'SILab1.java', LF will be replaced by CRLF the next time Git touches it
+
+Поставување на SILab1.java на stage
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ git commit -m "Add java class"
+[master 10960e2] Add java class
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+Commit за SILab1.java
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+TM@DESKTOP-S1CO95O MINGW64 ~/SI_2023_lab1_171261 (master)
+$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 838 bytes | 419.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/mladenovteodor/SI_2023_lab1_171261.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Синхронизација со github
